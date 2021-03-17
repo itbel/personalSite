@@ -5,6 +5,7 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Skills from "./components/Skills";
+import Experience from "./components/Experience";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 function App() {
@@ -13,7 +14,6 @@ function App() {
   const portRef = useRef();
   const contactRef = useRef();
   const [selection, setSelection] = useState("home");
-  /* REDUNDANT CODE REVIEW REQUIRED*/
   const handleSelect = (select) => {
     setSelection(select);
     console.log(`received ${selection} in app.js`);
@@ -77,6 +77,7 @@ function App() {
       <div ref={aboutRef}>
         <About></About>
         <Skills></Skills>
+        {false && <Experience></Experience>}
       </div>
       <div ref={portRef}>
         <Portfolio></Portfolio>

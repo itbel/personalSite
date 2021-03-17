@@ -40,11 +40,11 @@
   padding-top: 60px;
   min-height: 40vh;
   background-color: #b2b2b2;
-  color: #333333;
+  color: black;
 }
 .about p {
   font-family: "Lato", sans-serif;
-  color: #333333;
+  color: black;
 }
 
 .aboutPara {
